@@ -1,0 +1,142 @@
+@font-face {
+    font-family: roboto;
+    src: url(./Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: bold-roboto;
+    src: url(./Roboto/Roboto-Bold.ttf);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    
+  
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    user-select: none;
+    width: 70%;
+    max-width: 500px;
+    border: 2px solid #553d67;
+}
+
+.container div {
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #553d67;
+    font-family: 'bold-roboto', sans-serif;
+    
+}
+
+.container div:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#reset-modal {
+    padding: 20px;
+    width: 60%;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    color: #553d67; /* Text color */
+}
+
+#reset-modal section {
+    margin-bottom: 20px;
+    color: #553d67;
+    font-family: 'bold-roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+#reset-modal .reset {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #553d67; /* Background color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#reset-modal .reset:hover {
+    background-color: #412c4e; /* Darker hover background color */
+}
+
+
+
+/* Add modal styling here */
+
+
+#popup-modal {
+    padding: 20px;
+    width: 50%;
+    max-width: 300px;
+    background-color: #e5e5e5; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #553d67;
+    font-family: bold-roboto;
+    font-size: 1rem;
+}
+
+#close-popup {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #553d67;
+    
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#close-popup:hover {
+    background-color: #412c4e;
+}
+
+
+
+
+
+
+
+
+
